@@ -1,2 +1,2 @@
 # SAMIRA
-file di importazione da SAMIRA a FM
+file di importazione da SAMIRA a FM.
