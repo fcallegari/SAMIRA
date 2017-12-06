@@ -44,7 +44,4 @@
     </xsl:for-each>
   </xsl:template>
 
-  <!-- <xsl:template match="document('scheda_oa.xml')/CARDSET"> <ROW> <xsl:variable name="tag" select="'OGTF'"/> <xsl:for-each select="CARD//*"> <COL> <DATA> <xsl:value-of select="$tag"></xsl:value-of> </DATA> </COL> </xsl:for-each> </ROW>
-  </xsl:template> -->
-  <!-- <xsl:template match="/CARDSET"> <xsl:variable name="tag" select="'LDCS'"></xsl:variable> <xsl:for-each select="CARD//*[name()=$tag]"> <ROW> <COL> <DATA> <xsl:value-of select="."/> </DATA> </COL> </ROW> </xsl:for-each> </xsl:template> -->
 </xsl:stylesheet>
