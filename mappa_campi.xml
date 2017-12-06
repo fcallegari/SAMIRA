@@ -16,7 +16,6 @@ tabella che sarà generata -->
 <!-- ********************************************************* -->
 <tabelle>
   <tabella nomeFM="OPERE">
-    <campo>ID_CARD</campo>
     <campo>TSK</campo>
     <campo>LIR</campo>
     <campo>NCTA</campo>

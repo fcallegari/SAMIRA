@@ -29,8 +29,6 @@
     <!-- ciclo esterno sulle CARD -->
     <xsl:for-each select="CARD">
       <ROW>
-
-        <xsl:variable name="card" select="@id_card"/>
         <!-- ciclo interno sui campi della mappa -->
 
         <xsl:for-each select="document('mappa_campi.xml')//tabella[@nomeFM='OPERE']/campo">
@@ -39,16 +37,8 @@
           <COL>
             <DATA>
 
-              <xsl:choose>
+              <xsl:value-of select="document('scheda_oa.xml')/CARDSET/CARD[@id_card=$card]//*[name()=$field]"/>
 
-                <xsl:when test="$field='ID_CARD'">
-                  <xsl:value-of select="$card"/>
-                </xsl:when>
-
-                <xsl:otherwise>
-                  <xsl:value-of select="document('scheda_oa.xml')/CARDSET/CARD[@id_card=$card]//*[name()=$field]"/>
-                </xsl:otherwise>
-              </xsl:choose>
             </DATA>
           </COL>
         </xsl:for-each>
