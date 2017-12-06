@@ -26,7 +26,7 @@
 
   <xsl:template match="FTA">
 
-    <xsl:variable name="element" select="."/>
+    <xsl:variable name="sub_elements" select="*"/>
 
     <xsl:variable name="chiave" select="ancestor::CARD//NCI"/>
     <ROW>
@@ -45,7 +45,7 @@
 
               <xsl:otherwise>
 
-                <xsl:value-of select="$element"/>
+                <xsl:value-of select="$sub_elements[name()=$field]"/>
 
               </xsl:otherwise>
             </xsl:choose>
