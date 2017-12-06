@@ -12,7 +12,7 @@
         <xsl:apply-templates select="tabella[@nomeFM='FOTOGRAFIE']"/>
       </METADATA>
       <RESULTSET>
-        <xsl:apply-templates select="document('scheda_oa.xml')/CARDSET"/>
+        <xsl:apply-templates select="document('scheda_oa.xml')//FTA"/>
       </RESULTSET>
     </FMPXMLRESULT>
   </xsl:template>
@@ -24,36 +24,38 @@
     </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="CARDSET">
+  <xsl:template match="FTA">
 
-    <!-- ciclo esterno sulle CARD -->
-    <xsl:for-each select="CARD/*">
-      <ROW>
+    <xsl:variable name="element" select="."/>
 
-        <xsl:variable name="card" select="ancestor::CARD/@id_card"/>
-        <!-- ciclo interno sui campi della mappa -->
+    <xsl:variable name="chiave" select="ancestor::CARD//NCI"/>
+    <ROW>
 
-        <xsl:for-each select="document('mappa_campi.xml')//tabella[@nomeFM='FOTOGRAFIE']/campo">
+      <xsl:for-each select="document('mappa_campi.xml')//tabella[@nomeFM='FOTOGRAFIE']/campo">
 
-          <xsl:variable name="field" select="."/>
-          <COL>
-            <DATA>
+        <xsl:variable name="field" select="."/>
+        <COL>
+          <DATA>
 
-              <xsl:choose>
+            <xsl:choose>
 
-                <xsl:when test="$field='_ID_CARD'">
-                  <xsl:value-of select="$card"/>
-                </xsl:when>
+              <xsl:when test="$field = '_NCI'">
+                <xsl:value-of select="$chiave"/>
+              </xsl:when>
 
-                <xsl:otherwise>
-                  <xsl:value-of select="document('scheda_oa.xml')/CARDSET/CARD[@id_card=$card]//*[name()=$field]"/>
-                </xsl:otherwise>
-              </xsl:choose>
-            </DATA>
-          </COL>
-        </xsl:for-each>
-      </ROW>
-    </xsl:for-each>
+              <xsl:otherwise>
+
+                <xsl:value-of select="$element"/>
+
+              </xsl:otherwise>
+            </xsl:choose>
+          </DATA>
+        </COL>
+
+      </xsl:for-each>
+
+    </ROW>
+
   </xsl:template>
 
 </xsl:stylesheet>

@@ -76,6 +76,7 @@ tabella che sarà generata -->
     <campo>OSS</campo>
   </tabella>
   <tabella nomeFM="FOTOGRAFIE">
+    <campo>_NCI</campo>
     <campo>FTAX</campo>
     <campo>FTAN</campo>
     <campo>FTAP</campo>
