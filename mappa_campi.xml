@@ -12,11 +12,11 @@ tabella che sarà generata -->
 
 <!-- ******************* Per TEST: ******************* -->
 <!-- applicare uno o più di questi stylesheet per aprire direttamente il file in fase di debug -->
-<?xml-stylesheet type="text/xsl" href="opere.xsl"?>
+<!-- <?xml-stylesheet type="text/xsl" href="opere.xsl"?> -->
+<?xml-stylesheet type="text/xsl" href="foto.xsl"?>
 <!-- ********************************************************* -->
 <tabelle>
   <tabella nomeFM="OPERE">
-    <campo>ID_CARD</campo>
     <campo>TSK</campo>
     <campo>LIR</campo>
     <campo>NCTA</campo>

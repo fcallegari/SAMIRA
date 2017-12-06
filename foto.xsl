@@ -9,7 +9,7 @@
   <xsl:template match="tabelle">
     <FMPXMLRESULT>
       <METADATA>
-        <xsl:apply-templates select="tabella[@nomeFM='OPERE']"/>
+        <xsl:apply-templates select="tabella[@nomeFM='FOTOGRAFIE']"/>
       </METADATA>
       <RESULTSET>
         <xsl:apply-templates select="document('scheda_oa.xml')/CARDSET"/>
@@ -27,13 +27,13 @@
   <xsl:template match="CARDSET">
 
     <!-- ciclo esterno sulle CARD -->
-    <xsl:for-each select="CARD">
+    <xsl:for-each select="CARD/*">
       <ROW>
 
-        <xsl:variable name="card" select="@id_card"/>
+        <xsl:variable name="card" select="ancestor::CARD/@id_card"/>
         <!-- ciclo interno sui campi della mappa -->
 
-        <xsl:for-each select="document('mappa_campi.xml')//tabella[@nomeFM='OPERE']/campo">
+        <xsl:for-each select="document('mappa_campi.xml')//tabella[@nomeFM='FOTOGRAFIE']/campo">
 
           <xsl:variable name="field" select="."/>
           <COL>
@@ -41,7 +41,7 @@
 
               <xsl:choose>
 
-                <xsl:when test="$field='ID_CARD'">
+                <xsl:when test="$field='_ID_CARD'">
                   <xsl:value-of select="$card"/>
                 </xsl:when>
 
