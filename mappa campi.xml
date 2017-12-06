@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- (Fcallegari, 5/12/2017) FILE DI MAPPATURA DA SAMIRA A FM Viene utilizzato in combinata con diversi stylesheet (.xsl) per generare le relative tabelle in FM Ogni elemento rappresenta una tabella di FileMaker, l'attributo nomeFM è il nome della
+tabella che sarà generata -->
+<!-- LOGICA -->
+<!-- * il nome del campo corrisponde al contenuto dell'elemento 'campo' -->
+<!-- * il nome del campo deve corrispondere al nome in SAMIRA, in modo che si possano fare sincronizzazioni -->
+<!-- * l'attributo 'tipo' deve corrispondere ai tipi di FileMaker ('TEXT','DATE','NUMBER', 'TIME', 'TIMESTAMP' ) -->
+
+<!-- UTILIZZO: -->
+<!-- aprire questo file applicando uno dei seguenti stylesheet -->
+<!-- opere.xsl: per generare la tabella opere -->
+
+<!-- ******************* Per TEST: ******************* -->
+<!-- applicare uno o più di questi stylesheet per aprire direttamente il file in fase di debug -->
+<?xml-stylesheet type="text/xsl" href="opere.xsl"?>
+<!-- ********************************************************* -->
+<tabelle>
+  <tabella nomeFM="OPERE">
+    <campo>ID_CARD</campo>
+    <campo>TSK</campo>
+    <campo>LIR</campo>
+    <campo>NCTA</campo>
+    <campo>NCTR</campo>
+    <campo>NCTN</campo>
+    <campo>NCI</campo>
+    <campo>OGTD</campo>
+    <campo>OGTT</campo>
+    <campo>OGTV</campo>
+    <campo>OGTN</campo>
+    <campo>OGTP</campo>
+    <campo>QNTN</campo>
+    <campo>PVCS</campo>
+    <campo>PVCR</campo>
+    <campo>PVCP</campo>
+    <campo>PVCC</campo>
+    <campo>LDCI</campo>
+    <campo>LDCT</campo>
+    <campo>LDCQ</campo>
+    <campo>LDCN</campo>
+    <campo>LDCC</campo>
+    <campo>LDCU</campo>
+    <campo>LDCS</campo>
+    <campo>LDCM</campo>
+    <campo>AUTS</campo>
+    <campo>AUTR</campo>
+    <campo>AUTM</campo>
+    <campo>AUTN</campo>
+    <campo>AUTA</campo>
+    <campo>AUTH</campo>
+    <campo>ATBD</campo>
+    <campo>ATBM</campo>
+    <campo>AAT</campo>
+    <campo>STCC</campo>
+    <campo>STCS</campo>
+    <campo>RSTD</campo>
+    <campo>RSTT</campo>
+    <campo>RSTS</campo>
+    <campo>RSTE</campo>
+    <campo>RSTN</campo>
+    <campo>RSTR</campo>
+    <campo>RSTO</campo>
+    <campo>DESO</campo>
+    <campo>ISRC</campo>
+    <campo>ISRL</campo>
+    <campo>ISRS</campo>
+    <campo>ISRT</campo>
+    <campo>ISRP</campo>
+    <campo>ISRA</campo>
+    <campo>ISRI</campo>
+    <campo>CDGG</campo>
+    <campo>CDGS</campo>
+    <campo>CMPD</campo>
+    <campo>CMPN</campo>
+    <campo>RSR</campo>
+    <campo>FUR</campo>
+    <campo>OSS</campo>
+  </tabella>
+  <tabella nomeFM="FOTOGRAFIE">
+    <campo>FTAX</campo>
+    <campo>FTAN</campo>
+    <campo>FTAP</campo>
+    <campo>FTAA</campo>
+    <campo>FTAD</campo>
+    <campo>FTAT</campo>
+    <campo>FTAZ</campo>
+  </tabella>
+</tabelle>
