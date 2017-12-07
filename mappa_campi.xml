@@ -7,8 +7,10 @@ tabella che sarà generata -->
 <!-- * l'attributo 'tipo' deve corrispondere ai tipi di FileMaker ('TEXT','DATE','NUMBER', 'TIME', 'TIMESTAMP' ) -->
 
 <!-- UTILIZZO: -->
-<!-- aprire questo file applicando uno dei seguenti stylesheet -->
-<!-- opere.xsl: per generare la tabella opere -->
+<!-- aprire questo file applicando il file di trasformazione relativo alla tabella che si vuole generare/aggiornare -->
+<!-- tab. OPERE: opere.xsl -->
+<!-- tab. FOTOGRAFIE: foto.xsl -->
+<!-- etc... -->
 
 <!-- ******************* Per TEST: ******************* -->
 <!-- applicare uno o più di questi stylesheet per aprire direttamente il file in fase di debug -->
