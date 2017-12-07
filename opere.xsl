@@ -31,13 +31,15 @@
       <ROW>
         <!-- ciclo interno sui campi della mappa -->
 
+        <xsl:variable name="this_card" select="."/>
+
         <xsl:for-each select="document('mappa_campi.xml')//tabella[@nomeFM='OPERE']/campo">
 
           <xsl:variable name="field" select="."/>
           <COL>
             <DATA>
 
-              <xsl:value-of select="document('scheda_oa.xml')/CARDSET/CARD[@id_card=$card]//*[name()=$field]"/>
+              <xsl:value-of select="$this_card//*[name()=$field]"/>
 
             </DATA>
           </COL>
