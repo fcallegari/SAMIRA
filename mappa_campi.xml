@@ -77,6 +77,7 @@ tabella che sarà generata -->
   </tabella>
   <tabella nomeFM="FOTOGRAFIE">
     <campo>_NCI</campo>
+    <campo>chiave</campo>
     <campo>FTAX</campo>
     <campo>FTAN</campo>
     <campo>FTAP</campo>

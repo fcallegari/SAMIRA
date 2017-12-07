@@ -28,7 +28,9 @@
 
     <xsl:variable name="sub_elements" select="*"/>
 
-    <xsl:variable name="chiave" select="ancestor::CARD//NCI"/>
+    <xsl:variable name="chiave" select="@id_field"/>
+
+    <xsl:variable name="chiave_esterna" select="ancestor::CARD//NCI"/>
     <ROW>
 
       <xsl:for-each select="document('mappa_campi.xml')//tabella[@nomeFM='FOTOGRAFIE']/campo">
@@ -40,6 +42,10 @@
             <xsl:choose>
 
               <xsl:when test="$field = '_NCI'">
+                <xsl:value-of select="$chiave_esterna"/>
+              </xsl:when>
+
+              <xsl:when test="$field = 'chiave'">
                 <xsl:value-of select="$chiave"/>
               </xsl:when>
 
