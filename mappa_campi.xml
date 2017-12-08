@@ -44,6 +44,8 @@ tabella che sarà generata -->
     <campo>LDCU</campo>
     <campo>LDCS</campo>
     <campo>LDCM</campo>
+    <campo>INVN</campo>
+    <campo>INVD</campo>
     <campo>AUTS</campo>
     <campo>AUTR</campo>
     <campo>AUTM</campo>
