@@ -112,4 +112,9 @@ tabella che sarà generata -->
     <campo>DTSL</campo>
     <campo>DTM</campo>
   </tabella>
+  <tabella nomeFM="MATERIA_TECNICA">
+    <campo>_NCI</campo>
+    <campo>chiave</campo>
+    <campo>MTC</campo>
+  </tabella>
 </tabelle>
