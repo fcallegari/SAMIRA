@@ -14,6 +14,7 @@ tabella che sarà generata -->
 
 <!-- ******************* Per TEST: ******************* -->
 <!-- applicare uno o più di questi stylesheet per aprire direttamente il file in fase di debug -->
+<?xml-stylesheet type="text/xsl" href="bib.xsl"?>
 <!-- ********************************************************* -->
 <tabelle>
   <tabella nomeFM="OPERE">
@@ -85,5 +86,15 @@ tabella che sarà generata -->
     <campo>FTAD</campo>
     <campo>FTAT</campo>
     <campo>FTAZ</campo>
+  </tabella>
+  <tabella nomeFM="BIBLIOGRAFIE">
+    <campo>_NCI</campo>
+    <campo>chiave</campo>
+    <campo>BIBX</campo>
+    <campo>BIBA</campo>
+    <campo>BIBD</campo>
+    <campo>BIBH</campo>
+    <campo>BIBN</campo>
+    <campo>BIBI</campo>
   </tabella>
 </tabelle>
