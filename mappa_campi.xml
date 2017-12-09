@@ -17,7 +17,7 @@ tabella che sarà generata -->
 <!-- <?xml-stylesheet type="text/xsl" href="bib.xsl"?> -->
 <!-- <?xml-stylesheet type="text/xsl" href="bib.xsl"?> -->
 <!-- <?xml-stylesheet type="text/xsl" href="cron.xsl"?> -->
-<?xml-stylesheet type="text/xsl" href="mis.xsl"?>
+<?xml-stylesheet type="text/xsl" href="stm.xsl"?>
 <!-- ********************************************************* -->
 <tabelle>
   <tabella nomeFM="OPERE">
@@ -66,6 +66,7 @@ tabella che sarà generata -->
     <campo>RSTR</campo>
     <campo>RSTO</campo>
     <campo>DESO</campo>
+    <campo>NSC</campo>
     <campo>ISRC</campo>
     <campo>ISRL</campo>
     <campo>ISRS</campo>
@@ -126,5 +127,15 @@ tabella che sarà generata -->
     <campo>MISL</campo>
     <campo>MISS</campo>
     <campo>MISV</campo>
+  </tabella>
+  <tabella nomeFM="STEMMI_EMBLEMI">
+    <campo>_NCI</campo>
+    <campo>chiave</campo>
+    <campo>STMC</campo>
+    <campo>STMQ</campo>
+    <campo>STMI</campo>
+    <campo>STMU</campo>
+    <campo>STMP</campo>
+    <campo>STMD</campo>
   </tabella>
 </tabelle>
