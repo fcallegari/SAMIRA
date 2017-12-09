@@ -17,7 +17,7 @@ tabella che sarà generata -->
 <!-- <?xml-stylesheet type="text/xsl" href="bib.xsl"?> -->
 <!-- <?xml-stylesheet type="text/xsl" href="bib.xsl"?> -->
 <!-- <?xml-stylesheet type="text/xsl" href="cron.xsl"?> -->
-<?xml-stylesheet type="text/xsl" href="stm.xsl"?>
+<!-- <?xml-stylesheet type="text/xsl" href="stm.xsl"?> -->
 <!-- ********************************************************* -->
 <tabelle>
   <tabella nomeFM="OPERE">
