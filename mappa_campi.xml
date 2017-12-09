@@ -16,7 +16,8 @@ tabella che sarà generata -->
 <!-- applicare uno o più di questi stylesheet per aprire direttamente il file in fase di debug -->
 <!-- <?xml-stylesheet type="text/xsl" href="bib.xsl"?> -->
 <!-- <?xml-stylesheet type="text/xsl" href="bib.xsl"?> -->
-<?xml-stylesheet type="text/xsl" href="cron.xsl"?>
+<!-- <?xml-stylesheet type="text/xsl" href="cron.xsl"?> -->
+<?xml-stylesheet type="text/xsl" href="mis.xsl"?>
 <!-- ********************************************************* -->
 <tabelle>
   <tabella nomeFM="OPERE">
@@ -116,5 +117,14 @@ tabella che sarà generata -->
     <campo>_NCI</campo>
     <campo>chiave</campo>
     <campo>MTC</campo>
+  </tabella>
+  <tabella nomeFM="MISURE">
+    <campo>_NCI</campo>
+    <campo>chiave</campo>
+    <campo>MISU</campo>
+    <campo>MISA</campo>
+    <campo>MISL</campo>
+    <campo>MISS</campo>
+    <campo>MISV</campo>
   </tabella>
 </tabelle>
