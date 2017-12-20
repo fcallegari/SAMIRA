@@ -21,66 +21,66 @@ tabella che sarà generata -->
 <!-- ********************************************************* -->
 <tabelle>
   <tabella nomeFM="OPERE">
-    <campo>TSK</campo>
-    <campo>LIR</campo>
-    <campo>NCTA</campo>
-    <campo>NCTR</campo>
-    <campo>NCTN</campo>
-    <campo>NCI</campo>
-    <campo>OGTD</campo>
-    <campo>OGTT</campo>
-    <campo>OGTV</campo>
-    <campo>OGTN</campo>
-    <campo>OGTP</campo>
-    <campo>QNTN</campo>
-    <campo>PVCS</campo>
-    <campo>PVCR</campo>
-    <campo>PVCP</campo>
-    <campo>PVCC</campo>
-    <campo>LDCI</campo>
-    <campo>LDCT</campo>
-    <campo>LDCQ</campo>
-    <campo>LDCN</campo>
-    <campo>LDCC</campo>
-    <campo>LDCU</campo>
-    <campo>LDCS</campo>
-    <campo>LDCM</campo>
-    <campo>INVN</campo>
-    <campo>INVD</campo>
-    <campo>AUTS</campo>
-    <campo>AUTR</campo>
-    <campo>AUTM</campo>
-    <campo>AUTN</campo>
-    <campo>AUTA</campo>
-    <campo>AUTH</campo>
+    <campo>AAT</campo>
     <campo>ATBD</campo>
     <campo>ATBM</campo>
-    <campo>AAT</campo>
-    <campo>STCC</campo>
-    <campo>STCS</campo>
-    <campo>RSTD</campo>
-    <campo>RSTT</campo>
-    <campo>RSTS</campo>
-    <campo>RSTE</campo>
-    <campo>RSTN</campo>
-    <campo>RSTR</campo>
-    <campo>RSTO</campo>
-    <campo>DESO</campo>
-    <campo>NSC</campo>
-    <campo>ISRC</campo>
-    <campo>ISRL</campo>
-    <campo>ISRS</campo>
-    <campo>ISRT</campo>
-    <campo>ISRP</campo>
-    <campo>ISRA</campo>
-    <campo>ISRI</campo>
+    <campo>AUTA</campo>
+    <campo>AUTH</campo>
+    <campo>AUTM</campo>
+    <campo>AUTN</campo>
+    <campo>AUTR</campo>
+    <campo>AUTS</campo>
     <campo>CDGG</campo>
     <campo>CDGS</campo>
     <campo>CMPD</campo>
     <campo>CMPN</campo>
-    <campo>RSR</campo>
+    <campo>DESO</campo>
     <campo>FUR</campo>
+    <campo>INVD</campo>
+    <campo>INVN</campo>
+    <campo>ISRA</campo>
+    <campo>ISRC</campo>
+    <campo>ISRI</campo>
+    <campo>ISRL</campo>
+    <campo>ISRP</campo>
+    <campo>ISRS</campo>
+    <campo>ISRT</campo>
+    <campo>LDCC</campo>
+    <campo>LDCI</campo>
+    <campo>LDCM</campo>
+    <campo>LDCN</campo>
+    <campo>LDCQ</campo>
+    <campo>LDCS</campo>
+    <campo>LDCT</campo>
+    <campo>LDCU</campo>
+    <campo>LIR</campo>
+    <campo>NCI</campo>
+    <campo>NCTA</campo>
+    <campo>NCTN</campo>
+    <campo>NCTR</campo>
+    <campo>NSC</campo>
+    <campo>OGTD</campo>
+    <campo>OGTN</campo>
+    <campo>OGTP</campo>
+    <campo>OGTT</campo>
+    <campo>OGTV</campo>
     <campo>OSS</campo>
+    <campo>PVCC</campo>
+    <campo>PVCP</campo>
+    <campo>PVCR</campo>
+    <campo>PVCS</campo>
+    <campo>QNTN</campo>
+    <campo>RSR</campo>
+    <campo>RSTD</campo>
+    <campo>RSTE</campo>
+    <campo>RSTN</campo>
+    <campo>RSTO</campo>
+    <campo>RSTR</campo>
+    <campo>RSTS</campo>
+    <campo>RSTT</campo>
+    <campo>STCC</campo>
+    <campo>STCS</campo>
+    <campo>TSK</campo>
   </tabella>
   <tabella nomeFM="FOTOGRAFIE">
     <campo>_NCI</campo>
